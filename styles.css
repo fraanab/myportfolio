@@ -313,6 +313,7 @@ nav li a:hover {
   animation: updownhover 1s infinite alternate;
 } */
 .project {
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -335,7 +336,8 @@ nav li a:hover {
   padding: 12px;
   z-index: 8;
   position: absolute;
-  transform: translate(-22vw, 45vh);
+  bottom: 0;
+  right: 45%;
   font-size: 1rem;
   transition: background 0.3s;
 }
@@ -376,9 +378,37 @@ nav li a:hover {
 .contact .contactxt {
   width: 50vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.contactxt form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+form input{
+  padding: 12px;
+  outline: none;
+  border: none;
+  margin: 10px 0;
+}
+form textarea{
+  padding: 12px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+form button{
+  padding: 10px 0;
+  border: 1px solid #fff;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+  font-family: monospace;
+}
+form button:hover{
+  background: #fff;
+  color: #000;
 }
 .contactxt img {
   padding-left: 20px;
@@ -770,6 +800,7 @@ nav li a:hover {
     animation: updownhover 1s infinite alternate;
   } */
   .project {
+    position: relative;
     width: 100%;
     height: 100%;
   }
@@ -791,8 +822,9 @@ nav li a:hover {
     background: #333;
     padding: 12px;
     z-index: 5;
-    position: relative;
+    position: absolute;
     bottom: 0;
+    right: 40%;
     transform: translate(0);
     font-size: 1rem;
     transition: background 0.3s;
@@ -813,7 +845,7 @@ nav li a:hover {
   .contact .contactxt {
     width: 50vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -837,6 +869,7 @@ nav li a:hover {
     width: 50vw;
     align-items: center;
     justify-content: center;
+    margin-left: 30px;
   }
   .contactlinks img {
     width: 10vw;
@@ -1208,7 +1241,7 @@ nav li a:hover {
   .contact .contactxt {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
